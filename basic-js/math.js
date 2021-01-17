@@ -19,3 +19,15 @@ var num1 = 12;
 var num2 = Number('12');
 var result = num1 + num2;
 console.log(result);
+
+var negative = -12;
+console.log(Math.abs(negative));
+
+var rounded = 453.4556;
+console.log(Math.round(rounded));
+
+var ceiled = 453.464;
+console.log(Math.ceil(ceiled));
+
+var rand = Math.random() * 100 + 1;
+console.log(Math.floor(rand));
