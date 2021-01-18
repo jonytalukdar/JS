@@ -11,3 +11,7 @@ console.log(friendsAge.indexOf(21));
 var arr = [1, 5, 7];
 console.log(arr.indexOf(0));
 console.log(arr.indexOf(1));
+
+var num = [1, 2, 3, 4, 5];
+var result = num.slice(-1, 3);
+console.log(result);
