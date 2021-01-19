@@ -1,13 +1,12 @@
-function isLeapyear(year) {
-  if (year / 4 == 0) {
-    console.log(year, ' is a leap year');
-  } else if (year / 100 == 0) {
-    console.log(year, ' is a leap year');
-  } else if (year / 400 == 0) {
-    console.log(year, ' is a leap year');
+function isLeapYear(year) {
+  if (year % 400 === 0) {
+    return true;
+  } else if (year % 100 === 0) {
+    return false;
   } else {
-    console.log(year, ' is not a leap year');
+    return year % 4 === 0;
   }
 }
 
-isLeapyear(2021);
+var result = isLeapYear(1200);
+console.log(result);
