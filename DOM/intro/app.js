@@ -1,6 +1,2 @@
-document.getElementsByTagName('p');
-let first = document.getElementById('first');
-first.style.color = 'black';
-first.style.backgroundColor = 'yellow';
-first.style.fontSize = '45px';
-first.style.padding = ' 10px';
+var result = document.getElementsByClassName('author');
+result.style.color = 'red';
