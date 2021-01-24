@@ -11,6 +11,8 @@ for (let i = 0; i < authors.length; i++) {
   element.innerHTML = 'lekhok - ' + (i + 1);
 }
 
+// using queryselector
+
 let specials = document.querySelectorAll('.special h3');
 
 for (let i = 0; i < specials.length; i++) {
@@ -21,3 +23,15 @@ for (let i = 0; i < specials.length; i++) {
   element2.style.borderRadius = '20px';
   element2.style.textAlign = 'center';
 }
+
+//  added some element
+
+let article = document.getElementById('first-article');
+let newParagraph = document.createElement('p');
+newParagraph.innerHTML = 'This is added by javascript';
+article.appendChild(newParagraph);
+
+let list = document.querySelector('article ul');
+let newList = document.createElement('li');
+newList.innerHTML = 'list-item-6';
+list.appendChild(newList);
