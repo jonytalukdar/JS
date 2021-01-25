@@ -43,3 +43,13 @@ list.appendChild(newList);
 function handClick() {
   alert(new Date());
 }
+
+// add event listener
+
+let secondButton = document.getElementById('second-button');
+secondButton.onclick = handClick;
+secondButton.addEventListener('click', handClick);
+
+document.getElementById('last-button').addEventListener('click', function () {
+  document.body.style.color = 'red';
+});
