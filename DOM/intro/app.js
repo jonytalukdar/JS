@@ -46,10 +46,14 @@ function handClick() {
 
 // add event listener
 
+// formula one
 let secondButton = document.getElementById('second-button');
 secondButton.onclick = handClick;
+
+// formula two
 secondButton.addEventListener('click', handClick);
 
+// formula three
 document.getElementById('last-button').addEventListener('click', function () {
   document.body.style.color = 'red';
 });
