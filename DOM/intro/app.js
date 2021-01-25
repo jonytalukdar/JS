@@ -31,7 +31,15 @@ let newParagraph = document.createElement('p');
 newParagraph.innerHTML = 'This is added by javascript';
 article.appendChild(newParagraph);
 
+// added element
+
 let list = document.querySelector('article ul');
 let newList = document.createElement('li');
 newList.innerHTML = 'list-item-6';
 list.appendChild(newList);
+
+// add event
+
+function handClick() {
+  alert(new Date());
+}
