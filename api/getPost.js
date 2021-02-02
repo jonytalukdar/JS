@@ -1,6 +1,7 @@
 fetch('https://jsonplaceholder.typicode.com/users')
   .then((response) => response.json())
-  .then((json) => displayUsers(json));
+  .then((json) => displayUsers(json))
+  .catch((error) => console.log('error'));
 
 function displayUsers(users) {
   const usersName = users.map((user) => user.username);
