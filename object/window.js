@@ -2,7 +2,7 @@ const myName = 'joney'; // this is global scope
 
 function add(n1, n2) {
   let result = n1 + n2;
-  console.log(myName);
+  console.log(myName); // this is global scope
   console.log(result);
   function double(num) {
     const total = num * n2;
