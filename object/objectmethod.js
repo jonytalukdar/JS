@@ -14,4 +14,3 @@ const normalPerson = {
 normalPerson.getFullName();
 const result = normalPerson.chargeBill(10000);
 console.log(result);
-normalPerson.chargeBill(120);
