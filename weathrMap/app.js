@@ -16,7 +16,6 @@ serchButton.addEventListener('click', function () {
 function updataUi(data) {
   document.getElementById('show-city').innerText =
     data.name || 'Unknown Location';
-  data.name || 'UnKnown Location';
   document.getElementById('show-temp').innerText = data.main.temp;
   document.getElementById('visibility').innerText = data.clouds.all;
 }
