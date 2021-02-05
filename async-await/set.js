@@ -15,6 +15,6 @@ function doSomething() {
 // console.log('fourth');
 // console.log('sixth');
 
-setInterval(function () {
-  console.log('hi');
-}, 2000);
+// setInterval(function () {
+//   console.log('hi');
+// }, 2000);
