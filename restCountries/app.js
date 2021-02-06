@@ -4,7 +4,7 @@ function getCountyName(city) {
   const url = `https://restcountries.eu/rest/v2/name/${city}`;
   fetch(url)
     .then((response) => response.json())
-    .then((data) => console.log(data[0].name));
+    .then((data) => updateUI(data));
 }
 
 // added button handler
@@ -14,4 +14,9 @@ document.getElementById('search-button').addEventListener('click', function () {
   getCountyName(cityName);
 });
 
-function updateUI(data) {}
+function updateUI(data) {
+  document.getElementById('title').innerText = data[0].name;
+  document.getElementById('capital').innerText = data[0].capital;
+  document.getElementById('population').innerText = data[0].population;
+  document.getElementById('region').innerText = data[0].region;
+}
