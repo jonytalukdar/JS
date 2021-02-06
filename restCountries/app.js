@@ -1,10 +1,9 @@
 const baseApi = 'https://restcountries.eu/rest/v2/name/';
 
-function getCountyName(city) {
-  const url = `https://restcountries.eu/rest/v2/name/${city}`;
-  fetch(url)
-    .then((response) => response.json())
-    .then((data) => updateUI(data));
+async function getCountyName(city) {
+  const responce = await fetch(`${baseApi}${city}`);
+  const data = await responce.json();
+  updateUI(data);
 }
 
 // added button handler
@@ -14,6 +13,7 @@ document.getElementById('search-button').addEventListener('click', function () {
   getCountyName(cityName);
 });
 
+// function for update UI
 function updateUI(data) {
   document.getElementById('title').innerText = data[0].name;
   document.getElementById('capital').innerText = data[0].capital;
